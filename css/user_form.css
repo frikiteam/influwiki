@@ -64,21 +64,3 @@ h1{
     /* cursor:pointer me convierte el puntero en manito cuando paso por el boton*/
     cursor:pointer;
 }
-.formulariocontraseña{   
-    text-align: left;
-    text-decoration: none;
-    width: 50%;
-    padding: 20px;
-
-}
-
-.btnContraseña{
-    background-color: rgba(63, 243, 26, 0.781);
-    color:rgb(0, 0, 0);
-    border-color: rgba(2, 102, 44, 0.712);
-}
-.btnContraseña:hover{
-    background-color:  rgb(251, 255, 0);
-    /* cursor:pointer me convierte el puntero en manito cuando paso por el boton*/
-    cursor:pointer;
-}
