@@ -1,0 +1,57 @@
+/* Normalize */
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;	
+}
+
+h1 {
+	margin: 0;
+	font-size: 2.8rem;	
+	color: #000;
+}
+
+header {
+	height: 100vh;
+}
+
+/* Modificadores */
+.d-flex{
+	display: flex;
+}
+
+.d-flex.space-between {
+	justify-content: space-between;
+}
+
+.d-flex.y-center {
+	align-items: center;
+}
+
+/* HEADER */
+.bar_nav {
+	padding: 1rem;
+
+	background-color: #00aabb;
+}
+.menu_bar li{
+	padding: 0 1rem;	
+	font-size: 1.8rem;
+}
+
+.logo {
+	width: 20rem;
+}
