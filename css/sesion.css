@@ -1,0 +1,7 @@
+
+
+.bg-login-image {
+    background: url("../img/wiki_login.png");
+    background-position: center;
+    background-size: cover;
+  }
