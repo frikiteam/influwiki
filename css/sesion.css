@@ -1,15 +1,11 @@
 
 
 .bg-login-image {
-    background: url("../img/buho.png");
+    background: url("../img/logo.png");
     background-position: center;
     background-size: cover;
   }
 
 .row{
     min-height: 480px;
-}
-
-.brColor{
-  background-color: #81C91D;
 }
