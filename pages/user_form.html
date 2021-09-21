@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>user_form</title>
      <!-- aqui vamos a colocar y llamar el estilo, de lo echo en css-->
      <link rel="stylesheet" href="../css/user_form.css">
 </head>
@@ -54,7 +54,7 @@
                 <input class="diseño_input1" type="email" id="correo" name="txtCorreo" size="40" placeholder="Ingresa aqui tu correo">
                 <br /><br />
                 <!-- los siguientes son los radio button-->
-                <label class="diseño_label1">Ingresar Genero:</label>
+                <label class="diseño_label1">Genero:</label>
                 <label>Masculino:</label><input type="radio" name="genero" value="Masculino">
                 <label>Femenino:</label><input type="radio" name="genero" value="Femenino">
                 <br /><br />
@@ -68,10 +68,13 @@
                 <label>Otra:</label>
                 <input type="checkbox" name="materias" >
                 <br /><br />  
-                <label class="diseño_label1"> Rellena si ingresaste otra: </label>
+                <label class="diseño_label1"> Otra: </label>
                 <!-- placeholder es para en la caja de texto nos aparesca lo que debemos escribir en ves del label-->
                 <input class="diseño_input1" type="text" name="txtOtro" min="1" max="120" size="10" placeholder="Cual Otra">
                 <br /><br />  
+                <label class="diseño_label1"> <a href="terms_form.html">Acepta terminos y condiciones</a> </label>
+                <input type="checkbox" name="Terminos" >               
+                <br /><br /> 
                 <center>
                 <!-- Este imput es de tipo boton y &nbsp es para espacios-->
                 <input class="boton_formulario1" type="submit" value="Guardar">&nbsp;&nbsp;&nbsp;

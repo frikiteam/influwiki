@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>influencer_form</title>
     <!-- aqui vamos a colocar y llamar el estilo, de lo echo en css-->
     <link rel="stylesheet" href="../css/influencer_form.css">
 </head>
@@ -52,8 +52,8 @@
                 <label class="diseño_label1"> Fecha de Nacimiento: </label>
                 <input class="diseño_input1" type="date" name="txtFecha" min="1" max="120" size="10">
                 <br /><br /> 
-                <label class="diseño_label1"> Tipo de Documento: </label>
-                <!-- select es para un desplazamiento de barras de opciones-->
+                <!--<label class="diseño_label1"> Tipo de Documento: </label>
+                <!-- select es para un desplazamiento de barras de opciones
                 <select class="diseño_input1" name="tipo_documento">
                     <option value="" selected="true">Seleccionar tipo de documento </option>
                     <option value="CC">Cedula de Ciudadania</option>
@@ -61,20 +61,20 @@
                     <option value="Ce">Cedula Extrangera</option>
                 </select><br /><br />
                 <label class="diseño_label1"> Documento: </label>
-                <!-- placeholder es para en la caja de texto nos aparesca lo que debemos escribir en ves del label-->
+                <!-- placeholder es para en la caja de texto nos aparesca lo que debemos escribir en ves del label
                 <input class="diseño_input1" type="number" name="txtDocumento" min="1" max="120" size="10" placeholder="Ingresa aqui el numero de documento">
-                <br /><br />
+                <br /><br />-->
                 <!-- for y id son para conectar el label con el input, asi al darle click en el label me lleva al input para escrivir-->
                 <label class="diseño_label1" for="correo"> Correo: </label>
                 <input class="diseño_input1" type="email" id="correo" name="txtCorreo" size="40" placeholder="Ingresa aqui tu correo">
                 <br /><br />
                 <!-- los siguientes son los radio button-->
-                <label class="diseño_label1">Ingresar Genero:</label>
+                <label class="diseño_label1">Genero:</label>
                 <label>Masculino:</label><input type="radio" name="genero" value="Masculino">
                 <label>Femenino:</label><input type="radio" name="genero" value="Femenino">
                 <br /><br />
                 <!-- los siguientes son los cheks-->
-                <label class="diseño_label1">Señala area del contenido que compartiras:</label>
+                <label class="diseño_label1">Contenido a compartir:</label>
                 <label>Programacion:</label>
                 <!-- cheked es para mantener la opcion seleccionada por defecto-->
                 <input type="checkbox" name="materias" checked>
@@ -83,19 +83,21 @@
                 <label>Otra:</label>
                 <input type="checkbox" name="materias" >
                 <br /><br />  
-                <label class="diseño_label1"> Rellena si ingresaste otra: </label>
+                <label class="diseño_label1"> Otra: </label>
                 <!-- placeholder es para en la caja de texto nos aparesca lo que debemos escribir en ves del label-->
-                <input class="diseño_input1" type="text" name="txtOtro" min="1" max="120" size="10" placeholder="Cual Otro">
-                <br /><br />                
-                
-                <label class="diseño_label1">Ingresa la autodescripcion que compartiras con tus usuarios:</label>
-                <textarea class="diseño_input1" type="text" name="observaciones" rows="3" cols="20" placeholder="Autodescripcion">                    
+                <input class="diseño_input1" type="text" name="txtOtro" min="1" max="120" size="10" placeholder="Cual Otra">
+                <br /><br />
+                <label class="diseño_label1"> Perfil General:</label>
+                <textarea class="diseño_input1" type="text" name="observaciones" rows="3" cols="20" placeholder="Ingresa la autodescripcion que compartiras con tus usuarios">                    
                 </textarea>
+                <br /><br /> 
+                <label class="diseño_label1"> <a href="terms_form.html">Acepta terminos y condiciones</a> </label>
+                <input type="checkbox" name="Terminos" >               
                 <br /><br /> 
                 <center>
                 <!-- Este imput es de tipo boton y &nbsp es para espacios-->
                 <input class="boton_formulario1" type="submit" value="Guardar">&nbsp;&nbsp;&nbsp;
-                <input class="boton_formulario1" type="submit" value="cancelar">
+                <input class="boton_formulario1" type="submit" value="cancelar">                
                 </center>
             </form>
         </center>    
