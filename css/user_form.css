@@ -1,4 +1,7 @@
 /* display: flex es para que no salte de renglon*/
+img{
+    height: 130px;
+}
 body{
     background-color:white;
     color: hsl(90, 29%, 22%);
