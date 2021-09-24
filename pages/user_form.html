@@ -35,20 +35,21 @@
     </header>
     <main>
         <center>
-            <h1>Formulario de Incripcion para usuarios</h1>
+            <h1>Formulario de Registro</h1>
             
             <!-- Form es para que funcione bien el formulario agrupa todo lo del formulario y tome todos los datos de este como un emboltorio-->
             <form class="formulario">
                 <!-- label es para especie de variable titulo-->
-                <label class="diseño_label1" for="nombre"> Nombre: </label>
+                <label class="diseño_label1" for="nombre"> Nombres: </label>
                 <!-- imput ingresar la informacion, maxlength cantidad de caracteres y size tamaño del espacio-->
                 <!-- imput es de los unicos que no necesita cerrarse-->
                 <input class="diseño_input1" type="text" id="nombre" name="txtNombre" maxlength= "30" size = "30" placeholder="Ingresa aqui tu nombre">
-                <br /><br />              
-                <label class="diseño_label1"> Edad: </label>
-                <!-- placeholder es para en la caja de texto nos aparesca lo que debemos escribir en ves del label-->
-                <input class="diseño_input1" type="number" name="txtEdad" min="1" max="120" size="10" placeholder="Ingresa aqui tu edad">
-                <br /><br />                
+                <br /><br />
+                <label class="diseño_label1" for="apellido"> Apellidos: </label>
+                <!-- imput ingresar la informacion, maxlength cantidad de caracteres y size tamaño del espacio-->
+                <!-- imput es de los unicos que no necesita cerrarse-->
+                <input class="diseño_input1" type="text" id="Apellido" name="txtApellido" maxlength= "30" size = "30" placeholder="Ingresa aqui tu apellido">
+                <br /><br />
                 <!-- for y id son para conectar el label con el input, asi al darle click en el label me lleva al input para escrivir-->
                 <label class="diseño_label1" for="correo"> Correo: </label>
                 <input class="diseño_input1" type="email" id="correo" name="txtCorreo" size="40" placeholder="Ingresa aqui tu correo">
@@ -58,6 +59,11 @@
                 <label>Masculino:</label><input type="radio" name="genero" value="Masculino">
                 <label>Femenino:</label><input type="radio" name="genero" value="Femenino">
                 <br /><br />
+                <label class="diseño_label1">Perfil:</label>
+                <label>Influwiki:</label><input type="radio" name="perfil" value="Influwiki">
+                <label>Wikiusuario:</label><input type="radio" name="perfil" value="Wikiusuario">
+                <br /><br />
+                <p>Si eres  Wikiusuarios</p>
                 <!-- los siguientes son los cheks-->
                 <label class="diseño_label1">Señala las areas de intres:</label>
                 <label>Programacion:</label>
@@ -71,7 +77,25 @@
                 <label class="diseño_label1"> Otra: </label>
                 <!-- placeholder es para en la caja de texto nos aparesca lo que debemos escribir en ves del label-->
                 <input class="diseño_input1" type="text" name="txtOtro" min="1" max="120" size="10" placeholder="Cual Otra">
+                <br /><br />
+                <p>Si eres  Influwiki</p>
+                <label class="diseño_label1">Contenido a compartir:</label>
+                <label>Programacion:</label>
+                <!-- cheked es para mantener la opcion seleccionada por defecto-->
+                <input type="checkbox" name="materias" checked>
+                <label>Farandula:</label>
+                <input type="checkbox" name="materias" >
+                <label>Otra:</label>
+                <input type="checkbox" name="materias" >
                 <br /><br />  
+                <label class="diseño_label1"> Otra: </label>
+                <!-- placeholder es para en la caja de texto nos aparesca lo que debemos escribir en ves del label-->
+                <input class="diseño_input1" type="text" name="txtOtro" min="1" max="120" size="10" placeholder="Cual Otra">
+                <br /><br />
+                <label class="diseño_label1"> Descripcion General:</label>
+                <textarea class="diseño_input1" type="text" name="observaciones" rows="3" cols="20" placeholder="Ingresa la autodescripcion que compartiras con tus usuarios">                    
+                </textarea>
+                <br /><br />   
                 <label class="diseño_label1"> <a href="terms_form.html">Acepta terminos y condiciones</a> </label>
                 <input type="checkbox" name="Terminos" >               
                 <br /><br /> 
