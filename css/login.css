@@ -1,0 +1,30 @@
+
+.logoBuho{
+  height: 420px;
+  padding-top: 50px;
+}
+
+.row{
+    min-height: 480px;
+}
+
+.brColor{
+  background-color: #81C91D;
+}
+img{
+  height: 70px;
+}
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(162deg, rgba(2,0,36,1) 0%, rgba(223,229,235,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.cont__form{
+  background: rgb(2,0,36);
+  background: linear-gradient(162deg, rgba(2,0,36,1) 0%, rgba(223,229,235,1) 35%, rgba(0,212,255,1) 100%);
+  border-radius: 0 10px 10px 0 ;
+  padding-top: 7%;
+}
+.card{
+  border-radius: 10px;
+}

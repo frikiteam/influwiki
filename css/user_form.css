@@ -1,10 +1,12 @@
 /* display: flex es para que no salte de renglon*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 img{
     height: 130px;
 }
 body{
-    background-color:white;
-    color: hsl(90, 29%, 22%);
+    background: rgb(2,0,36);
+    background: linear-gradient(162deg, rgba(2,0,36,1) 0%, rgba(223,229,235,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: 'Roboto', sans-serif;
 }
 h1{
     text-align: center;
@@ -52,18 +54,30 @@ h1{
 .diseño_input1{
     display: inline-block;
     width: 50%;
+    height: 25px;
+    border-radius: 5px;
+}
+.diseño_input_area{    
+    display: inline-block;
+    width: 50%;
+    height: 60px;
+    border-radius: 5px;   
 }
 .boton_formulario1{
-    width: 200px;
-    height: 40px;
-    background-color: rgba(63, 243, 26, 0.781);
-    color:rgb(0, 0, 0);
+    width: 30%;
+    height: 35px;
+    background-color: #81C91D;
+    color:white;
     border-color: rgba(2, 102, 44, 0.712);
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
 
 }
 /* .boton_formulario1:hover{background-color: me cambia el color cuando paso el puntero por el boton*/
 .boton_formulario1:hover{
-    background-color:  rgb(251, 255, 0);
+    color: rgb(31, 31, 31);
+    background-color:  rgb(238, 241, 10);
     /* cursor:pointer me convierte el puntero en manito cuando paso por el boton*/
     cursor:pointer;
 }

@@ -7,6 +7,7 @@
     <title>user_form</title>
      <!-- aqui vamos a colocar y llamar el estilo, de lo echo en css-->
      <link rel="stylesheet" href="../css/user_form.css">
+     
 </head>
 <body>
     <!-- aqui vamos a colocar un logo y un menu, para eso es nav y ul-->
@@ -93,7 +94,7 @@
                 <input class="diseño_input1" type="text" name="txtOtro" min="1" max="120" size="10" placeholder="Cual Otra">
                 <br /><br />
                 <label class="diseño_label1"> Descripcion General:</label>
-                <textarea class="diseño_input1" type="text" name="observaciones" rows="3" cols="20" placeholder="Ingresa la autodescripcion que compartiras con tus usuarios">                    
+                <textarea class="diseño_input_area" type="text" name="observaciones" rows="3" cols="20" placeholder="Ingresa la autodescripcion que compartiras con tus usuarios">                    
                 </textarea>
                 <br /><br />   
                 <label class="diseño_label1"> <a href="terms_form.html">Acepta terminos y condiciones</a> </label>
@@ -101,8 +102,10 @@
                 <br /><br /> 
                 <center>
                 <!-- Este imput es de tipo boton y &nbsp es para espacios-->
-                <input class="boton_formulario1" type="submit" value="Guardar">&nbsp;&nbsp;&nbsp;
-                <input class="boton_formulario1" type="submit" value="cancelar">
+                <div class="botones_formulario">
+                <button class="boton_formulario1" type="submit" > Guardar </button>
+                <button class="boton_formulario1" type="submit" > Cancelar </button>
+                </div>
                 </center>
             </form>
         </center>    
