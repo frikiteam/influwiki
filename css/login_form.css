@@ -12,19 +12,24 @@
   background-color: #81C91D;
 }
 img{
-  height: 70px;
+  height: 90px;
 }
-body{
-  background: rgb(2,0,36);
+body{  
   background: linear-gradient(162deg, rgba(2,0,36,1) 0%, rgba(223,229,235,1) 35%, rgba(0,212,255,1) 100%);
 }
 
-.cont__form{
-  background: rgb(2,0,36);
-  background: linear-gradient(162deg, rgba(2,0,36,1) 0%, rgba(223,229,235,1) 35%, rgba(0,212,255,1) 100%);
+.cont__form{  
+  background: linear-gradient(-25deg, rgb(166, 162, 243) 0%, rgba(223,229,235,1) 35%, rgba(0, 213, 255, 0.322) 100%);
   border-radius: 0 10px 10px 0 ;
-  padding-top: 7%;
+  padding-top: 2%;
 }
 .card{
   border-radius: 10px;
+}
+.form-check{
+  color: rgba(0, 0, 0, 0.493);
+}
+.card{
+  margin: 0;
+  padding: 0;
 }

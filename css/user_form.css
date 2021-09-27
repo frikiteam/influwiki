@@ -3,10 +3,16 @@
 img{
     height: 130px;
 }
-body{
-    background: rgb(2,0,36);
-    background: linear-gradient(162deg, rgba(2,0,36,1) 0%, rgba(223,229,235,1) 35%, rgba(0,212,255,1) 100%);
+h1{
     font-family: 'Roboto', sans-serif;
+}
+body{
+    background: linear-gradient(-25deg, rgb(166, 162, 243) 0%, rgba(223,229,235,1) 35%, rgba(0, 213, 255, 0.322) 100%);
+    /*background: rgb(1,212,255);
+    background: linear-gradient(0deg, rgba(1,212,255,1) 10%, rgba(255,255,255,1) 90%);*/
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+
 }
 h1{
     text-align: center;
@@ -37,7 +43,7 @@ h1{
 }
 
 #menu a:hover{
-    background-color: rgb(251, 255, 0);
+    background-color: rgb(64, 172, 105);
 }
 .formulario{
     text-align: left;
@@ -55,29 +61,44 @@ h1{
     display: inline-block;
     width: 50%;
     height: 25px;
+    border: none;
     border-radius: 5px;
+    outline: none;
 }
+
 .diseño_input_area{    
     display: inline-block;
     width: 50%;
     height: 60px;
-    border-radius: 5px;   
+    border: none;
+    border-radius: 5px;
+    outline: none;   
 }
 .boton_formulario1{
     width: 30%;
     height: 35px;
     background-color: #81C91D;
-    color:white;
+    color:rgb(0, 0, 0);
     border-color: rgba(2, 102, 44, 0.712);
     margin: 10px;
+    border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 14px;
+    outline: none;
 
 }
 /* .boton_formulario1:hover{background-color: me cambia el color cuando paso el puntero por el boton*/
 .boton_formulario1:hover{
-    color: rgb(31, 31, 31);
-    background-color:  rgb(238, 241, 10);
+    color: white;
+    background-color:  #5d8622;
     /* cursor:pointer me convierte el puntero en manito cuando paso por el boton*/
     cursor:pointer;
+}
+.formulario{
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

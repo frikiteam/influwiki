@@ -17,24 +17,24 @@
             <a href="index.html" title="ir a la pagina principal "target="_blank"> 
             <a href="Password_assignment_form.html" title="ir a otra pagina "target="_blank">    
             <!-- crear logo de pagina, y si no carga el nombre con alt sale el nombre de la empresa-->
-            <img src="../img/InfluKiwi alta.png" alt="otra" ></img>
+            <img src="../img/InfluKiwi_logo.png" alt="otra" ></img>
             </a></a>
-        <h1> Bienvenido </h1>
         </center>
         <!-- declarar el menu-->
-        <nav id="menu">            
-            <!-- crear lista-->
+        <!-- <nav id="menu">            
+            <!-- crear lista
             <ul>
-                <!-- crear libros de una lista-->
+                <!-- crear libros de una lista
                 <li><a href="Anterior.html">Anterior</a></li>
-                <!-- crear hipervinculos con pag interna o index-->
+                <!-- crear hipervinculos con pag interna o index
                 <li><a href="principal.html">Principal</a></li>
-                 <!-- crear hipervinculos con pag externa-->
+                 <!-- crear hipervinculos con pag externa
                 <li><a href="Siguiente.html">Siguiente</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
+        <div class="divFormulario">
         <center>
             <h1>Formulario de Registro</h1>
             
@@ -64,7 +64,7 @@
                 <label>Influwiki:</label><input type="radio" name="perfil" value="Influwiki">
                 <label>Wikiusuario:</label><input type="radio" name="perfil" value="Wikiusuario">
                 <br /><br />
-                <p>Si eres  Wikiusuarios</p>
+                <h3>Si eres  Wikiusuario</h3>
                 <!-- los siguientes son los cheks-->
                 <label class="diseño_label1">Señala las areas de intres:</label>
                 <label>Programacion:</label>
@@ -79,7 +79,7 @@
                 <!-- placeholder es para en la caja de texto nos aparesca lo que debemos escribir en ves del label-->
                 <input class="diseño_input1" type="text" name="txtOtro" min="1" max="120" size="10" placeholder="Cual Otra">
                 <br /><br />
-                <p>Si eres  Influwiki</p>
+                <h3>Si eres  Influwiki</h3>
                 <label class="diseño_label1">Contenido a compartir:</label>
                 <label>Programacion:</label>
                 <!-- cheked es para mantener la opcion seleccionada por defecto-->
@@ -94,7 +94,7 @@
                 <input class="diseño_input1" type="text" name="txtOtro" min="1" max="120" size="10" placeholder="Cual Otra">
                 <br /><br />
                 <label class="diseño_label1"> Descripcion General:</label>
-                <textarea class="diseño_input_area" type="text" name="observaciones" rows="3" cols="20" placeholder="Ingresa la autodescripcion que compartiras con tus usuarios">                    
+                <textarea class="diseño_input_area" type="text" rows="3" cols="20">                    
                 </textarea>
                 <br /><br />   
                 <label class="diseño_label1"> <a href="terms_form.html">Acepta terminos y condiciones</a> </label>
@@ -108,7 +108,8 @@
                 </div>
                 </center>
             </form>
-        </center>    
+        </center>
+        </div>    
     </main>
 </body>
 </html>
