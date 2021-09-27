@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+img{
+    height: 150px;
+}
+body{
+    background: linear-gradient(-25deg, rgb(166, 162, 243) 0%, rgba(223,229,235,1) 35%, rgba(0, 213, 255, 0.322) 100%);
+    font-family: 'Roboto', sans-serif;
+}.estilo_terms{
+    padding: 0px 60px 0px 60px;
+    
+    color: black;
+}
