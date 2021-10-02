@@ -84,9 +84,12 @@ body{
     outline: none;
 
 }
+a{
+	color: black;
+	text-decoration: none;
+}
 /* .boton_formulario1:hover{background-color: me cambia el color cuando paso el puntero por el boton*/
 .boton_formulario1:hover{
-    color: rgb(255, 255, 255);
     background-color:  #5d8622;
     /* cursor:pointer me convierte el puntero en manito cuando paso por el boton*/
     cursor:pointer;
