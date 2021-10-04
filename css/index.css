@@ -6,6 +6,7 @@
   --container-padding: 0 2.5rem;
 	--white: #fff;
 	--btn-green: #39AF64;
+	--bg-gradient: linear-gradient(-25deg, rgb(166, 162, 243) 0%, rgba(223,229,235,1) 35%, rgba(0, 213, 255, 0.322) 100%);
 }
 
 /* Normalize */
@@ -117,7 +118,7 @@ h2 {
 header {
 	height: 100vh;
 	color: #000;
-	background: linear-gradient(-25deg, rgb(166, 162, 243) 0%, rgba(223,229,235,1) 35%, rgba(0, 213, 255, 0.322) 100%);
+	background: var(--bg-gradient);
 }
 
 .container-barnav {
@@ -134,7 +135,8 @@ header {
 }
 
 .logo {
-	width: 25rem;
+	max-width: 25rem;
+	height: fit-content;
 }
 
 .draw {
@@ -153,11 +155,24 @@ header {
 
 /* ABOUT */
 
-#about{
-	height: 100vh;
+
+#explorer {
+	background: var(--bg-gradient);
 }
 
-#explorer div{
-	border: #000 1px solid;
-	border-radius: 1rem;
+.category {
+	color: var(--btn-green);
+	transition: border .1s ease-in-out;
+}
+
+.category:hover {
+	border-bottom: #0af 5px solid;
+}
+footer {
+	background: #AFF2FF;
+}
+.nav-footer {
+	width: 50%;	
+	text-align: center;
+	font-size: 1.8rem;
 }
