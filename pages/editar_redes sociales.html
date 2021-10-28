@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user_form</title>
+     <!-- aqui vamos a colocar y llamar el estilo, de lo echo en css-->
+     <link rel="stylesheet" href="../css/user_form.css">
+     
+</head>
+<body>
+    <!-- aqui vamos a colocar un logo y un menu, para eso es nav y ul-->    
+    <header>
+        <center>
+            <!-- crear hipervinculos para mi logo sin cerrar mi pagina inicial-->
+            <a href="../index.html" title="ir a la pagina principal "target="_blank">  
+            <!-- crear logo de pagina, y si no carga el nombre con alt sale el nombre de la empresa-->
+            <img src="../img/Influwiki_Logo.png" alt="otra" ></img>
+            </a></a>
+        </center>
+    </header>
+    <main>
+        <div class="divFormulario"></div>
+        <center>                       
+            <!-- Form es para que funcione bien el formulario agrupa todo lo del formulario y tome todos los datos de este como un emboltorio-->
+            <form class="formulario">
+                <h1>Agregar redes sociales</h1>
+                <label class="diseño_label1" for="redsocial1"> Facebook: </label>
+                <input class="diseño_input1" type="email" id="redsocial1" name="txtredsocial1" size="40" placeholder="Ingresa aqui tu red social">
+                <br /><br />
+                <label class="diseño_label1" for="redsocial2"> Instagram: </label>
+                <input class="diseño_input1" type="email" id="redsocial2" name="txtredsocial2" size="40" placeholder="Ingresa aqui tu red social">
+                <br /><br />
+                <label class="diseño_label1" for="redsocial3"> LinkedIn: </label>
+                <input class="diseño_input1" type="email" id="redsocial3" name="txtredsocial3" size="40" placeholder="Ingresa aqui tu red social">
+                <br /><br />
+                <label class="diseño_label1" for="redsocial4"> Twitter: </label>
+                <input class="diseño_input1" type="email" id="redsocial4" name="txtredsocial4" size="40" placeholder="Ingresa aqui tu red social">
+                <br /><br />
+                <label class="diseño_label1" for="redsocial5"> YouTube: </label>
+                <input class="diseño_input1" type="email" id="redsocial5" name="txtredsocial5" size="40" placeholder="Ingresa aqui tu red social">
+                <br /><br />
+                <label class="diseño_label1" for="redsocial6"> switch: </label>
+                <input class="diseño_input1" type="email" id="redsocial6" name="txtredsocial6" size="40" placeholder="Ingresa aqui tu red social">
+                <br /><br /> 
+                <center>
+                <!-- Este imput es de tipo boton y &nbsp es para espacios-->
+                <div class="botones_formulario">
+                <button class="boton_formulario1" type="submit" > Guardar </button>
+                <button class="boton_formulario1" type="submit" > <a href="Perfil_edicion.html">Cancelar</a></button>
+                </div>
+                </center>
+            </form>
+        </center>
+        </div>    
+    </main>
+</body>
+</html>
