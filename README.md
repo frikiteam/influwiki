@@ -1,12 +1,11 @@
 # influwiki
 
-Esta es una manada de recocheros haciendo código
 
 Integrantes:
 
 * Maria
 * Carlos
-* Juan
+* Juan  Comunicador
 * Leonardo
 * Brufeli
 * Yesid
