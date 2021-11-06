@@ -20,7 +20,7 @@ public class UsuarioModel implements Serializable {
 	private String apellidos;
 	private String genero;
 	private String sobre_nombre;
-	private String corre_eletronico;
+	private String correo_electronico;
 	private String contrasena;
 	private String perfil;
 	private String descripcion_contenido;
@@ -93,13 +93,13 @@ public class UsuarioModel implements Serializable {
 	}
 
 
-	public String getCorre_eletronico() {
-		return corre_eletronico;
+	public String getCorreo_electronico() {
+		return correo_electronico;
 	}
 
 
-	public void setCorre_eletronico(String corre_eletronico) {
-		this.corre_eletronico = corre_eletronico;
+	public void setCorreo_electronico(String correo_electronico) {
+		this.correo_electronico = correo_electronico;
 	}
 
 
@@ -157,7 +157,7 @@ public class UsuarioModel implements Serializable {
 	public String toString() {
 		return "Usuario [id=" + id + ", fecha_registro=" + fecha_registro + ", nombres=" + nombres + ", apellidos="
 				+ apellidos + ", genero=" + genero + ", sobre_nombre=" + sobre_nombre + ", corre_eletronico="
-				+ corre_eletronico + ", contrasena=" + contrasena + ", perfil=" + perfil + ", descripcion_contenido="
+				+ correo_electronico + ", contrasena=" + contrasena + ", perfil=" + perfil + ", descripcion_contenido="
 				+ descripcion_contenido + ", tematica=" + tematica + ", ultima_actualizacion=" + ultima_actualizacion
 				+ "]";
 	}

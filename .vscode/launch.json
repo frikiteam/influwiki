@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SbInfluwikiApplication<sb_influwiki>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "co.com.frikiteam.influwiki.SbInfluwikiApplication",
+            "projectName": "sb_influwiki",
+            "args": ""
+        }
+    ]
+}
