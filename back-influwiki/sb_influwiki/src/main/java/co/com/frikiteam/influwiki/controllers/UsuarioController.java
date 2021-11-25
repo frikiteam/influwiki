@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,34 +20,51 @@ import co.com.frikiteam.influwiki.models.UsuarioModel;
 import co.com.frikiteam.influwiki.services.UsuarioService;
 
 @RestController
-@CrossOrigin(origins = "*", methods = {RequestMethod.GET,RequestMethod.POST})
+@CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST })
 @RequestMapping("/frikiteam/api/influwiki/v01")
 public class UsuarioController {
 
 	@Autowired
 	UsuarioService usuarioService;
-	
+
 	/**
 	 * Metodo que devuelve una lista de usuarios
+	 * 
 	 * @return
 	 */
 	@GetMapping("/obtener-usuarios")
-	public ArrayList<UsuarioModel> obtenerUsuarios(){
+	public ArrayList<UsuarioModel> obtenerUsuarios() {
 		return usuarioService.listarUsuarios();
 	}
-	
+
 	/**
 	 * Metodo que utiliza el servicio para almacenar el usuario enviado
+	 * 
 	 * @param usuario
 	 * @return
 	 */
+	/*
+	 * @PostMapping("/crear-usuario") public UsuarioModel
+	 * guardarUsuario(@RequestBody UsuarioModel usuario) { return
+	 * usuarioService.registrarUsuario(usuario); }
+	 */
+	
+	
+
 	@PostMapping("/crear-usuario")
-	public UsuarioModel guardarUsuario(@RequestBody UsuarioModel usuario) {
-		return usuarioService.registrarUsuario(usuario);
+	public ResponseEntity<UsuarioModel> guardarUsuario(@RequestBody UsuarioModel usuario) {
+		
+		
+		return ResponseEntity.status(HttpStatus.CREATED).body(usuarioService.registrarUsuario(usuario));
+				
 	}
 	
+	
+	
+
 	/**
 	 * Metodo que utiliza el servicio para eliminar segun el ID enviado
+	 * 
 	 * @param id
 	 * @return
 	 */
@@ -54,20 +73,20 @@ public class UsuarioController {
 		boolean borrado = this.usuarioService.eliminarUsuario(id);
 		if (borrado) {
 			return "Se eliminó el usario con éxito " + id;
-		}else {
+		} else {
 			return "No se ha podido eleminiar el usuario " + id;
-		}		
+		}
 	}
-	
+
 	/**
 	 * Metodo que utiliza el servicio para buscar segun el ID enviado
+	 * 
 	 * @param id
 	 * @return
 	 */
 	@GetMapping(path = "/obtener-usuarios/{id}")
-	public Optional<UsuarioModel> obtenerUsario(@PathVariable("id") long id){
+	public Optional<UsuarioModel> obtenerUsario(@PathVariable("id") long id) {
 		return this.usuarioService.buscarUsuarioId(id);
 	}
-	
-	
+
 }

@@ -31,10 +31,6 @@ public class UsuarioService {
 	 * @return
 	 */
 	public UsuarioModel registrarUsuario(UsuarioModel usuario) {
-		/**
-		 * TODO Crear interface para validar el registro o devolver un json con un tipo
-		 * de respuesta OK
-		 */
 		return usuarioRepository.save(usuario);
 
 	}
