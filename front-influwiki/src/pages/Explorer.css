@@ -1,0 +1,44 @@
+.main_explorer {
+  display: flex;
+  flex-direction: column;
+}
+.caja_g{
+  padding: 2rem;
+  margin: 1rem;
+  background-color: rgba(158, 248, 155, 0.425);
+  border: #39AF64 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+
+}
+.caja_n{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  background-color: rgba(174, 255, 178, 0.486);
+}
+.caja_a img{
+  border-radius: 50%;
+  width: 70px;
+  margin-right: 20px;
+
+}
+
+.caja_a{
+  display: flex;
+  flex-direction: column;
+}
+
+.diseño_boton {
+  padding: 1rem;
+  margin: 5px;
+  background-color: #81C91D;
+  border-radius: 5px;
+}
+
+.diseño_boton:hover{
+  background-color: rgb(64, 172, 105);
+  cursor:pointer;
+}
