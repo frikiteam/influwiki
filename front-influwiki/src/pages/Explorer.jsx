@@ -1,21 +1,15 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
+import './Explorer.css'
 import UserList from "../components/Explorer/UserList";
 import HeaderNav from "../components/Header/HeaderNav";
 
-const Explorer = () => {
-  
-  let [data, setData] = useState([])
-
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users/')
-      .then(response => response.json())
-      .then(json => setData(json))
-  }, [])
-
+const Explorer = ({data}) => {
   return (
     <>
       <HeaderNav/>
-      {data.map(user => <UserList user={user}/>)}
+      <main className={'main_explorer'}>
+        {data.map(user => <UserList user={user} key={user.id}/>)}
+      </main>
     </>
   )
 }

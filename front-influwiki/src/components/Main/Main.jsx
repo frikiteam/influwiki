@@ -1,7 +1,4 @@
-import React, { Component } from 'react'
-
-import abouDrawtSVG from '../../assets/img/about-draw.svg'
-import explorerDrawtSVG from '../../assets/img/explorer-draw.svg'
+import React from 'react'
 import {Link} from "react-router-dom";
 
 const Main = () => {
@@ -9,7 +6,7 @@ const Main = () => {
         <main>
         <section id="about" className="full-width">
             <div className="container x-auto full-height flex space-between y-center wrap">
-                <img className="draw" src={abouDrawtSVG}
+                <img className="draw" src={'/img/about-draw.svg'}
                 alt="Ilustración de una estudiante teniendo una clase virtual"/>
                 <div className="text-ctn flex">
                     <h2>Somos el puente para encontrar lo que necesitas</h2>
@@ -26,7 +23,7 @@ const Main = () => {
                 <h2>Conoce creadores que enseñan programación
                     <Link to={'/explorer'} className={'category'}> entrando aquí</Link>
                 </h2>
-                <img className="draw" src={explorerDrawtSVG}
+                <img className="draw" src={'/img/explorer-draw.svg'}
                 alt="Ilustración de una estudiante teniendo una clase virtual"/>
             </div>
         </section>

@@ -4,7 +4,7 @@ import HeaderBody from "./HeaderBody";
 
 const Header = () => {
   return (
-      <header className="space-between">
+      <header className="space-between header_home">
         <HeaderNav/>
         <HeaderBody/>
       </header>

@@ -1,8 +1,4 @@
-import React, { Component } from "react";
-//import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-//images
-import logoInfluwiki from "../../assets/img/logo.png";
+import React from "react";
 
 const Footer = () => {
   return (
@@ -11,7 +7,7 @@ const Footer = () => {
         <div className="flex container x-auto space-between y-center wrap column">
           <img
             className="logo"
-            src={logoInfluwiki}
+            src={'/img/logo.png'}
             alt="Logotipo de Influwiki"
           />
           <nav className="nav-footer flex space-between full-height y-center column">

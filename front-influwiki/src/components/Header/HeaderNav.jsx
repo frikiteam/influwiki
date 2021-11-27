@@ -1,8 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-import headerPng from '../../assets/img/logo.png';
-
 const HeaderNav = () => {
   return (
     <>
@@ -11,7 +9,7 @@ const HeaderNav = () => {
           <Link to={'/'}>
             <img
               className="logo x-auto-mbl"
-              src={headerPng}
+              src={'/img/logo.png'}
               alt="Logotipo de InfluWiki"
             />
           </Link>

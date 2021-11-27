@@ -1,5 +1,4 @@
 import React from 'react';
-import headerDrawSVG from '../../assets/img/header-draw.svg'
 
 const HeaderBody = () => {
   return (
@@ -19,7 +18,7 @@ const HeaderBody = () => {
           </div>
           <img
             className="draw"
-            src={headerDrawSVG}
+            src={'/img/header-draw.svg'}
             alt="Ilustración de estudiantes en las escaleras"
           />
         </div>
