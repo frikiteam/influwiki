@@ -6,58 +6,58 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import co.com.frikiteam.influwiki.models.UsuarioModel;
-import co.com.frikiteam.influwiki.repository.UsuarioRepository;
+import co.com.frikiteam.influwiki.models.CursoModel;
+import co.com.frikiteam.influwiki.repository.CursoRepository;
 
 @Service
-public class UsuarioService {
+public class CursoService {
 
 	@Autowired
-	UsuarioRepository usuarioRepository;
+	CursoRepository cursoRepository;
 
 	/**
-	 * Metodo que lista todos los usuatios de la bd
+	 * Metodo que lista todos los cursos de la bd
 	 * 
 	 * @return
 	 */
-	public ArrayList<UsuarioModel> listarUsuarios() {
-		return (ArrayList<UsuarioModel>) usuarioRepository.findAll();
+	public ArrayList<CursoModel> listarCurso() {
+		return (ArrayList<CursoModel>) cursoRepository.findAll();
 	}
 
 	/**
-	 * Metodo que registra un nuevo usuario
+	 * Metodo que registra un nuevo curso
 	 * 
-	 * @param usuario
+	 * @param curso
 	 * @return
 	 */
-	public UsuarioModel registrarUsuario(UsuarioModel usuario) {
+	public CursoModel registrarCurso(CursoModel curso) {
 		/**
 		 * TODO Crear interface para validar el registro o devolver un json con un tipo
 		 * de respuesta OK
 		 */
-		return usuarioRepository.save(usuario);
+		return cursoRepository.save(curso);
 
 	}
 
 	/**
-	 * Metodo que busca si existe un uuario por id
-	 * @param id
+	 * Metodo que busca si existe un curso por id
+	 * @param id_curso
 	 * @return
 	 */
-	public Optional<UsuarioModel>  buscarUsuarioId(Long id) {
+	public Optional<CursoModel>  buscarCursoId(Long id_curso) {
 		
-		return usuarioRepository.findById(id);
+		return cursoRepository.findById(id_curso);
 	}
 	
 	/**
-	 * Metodo elimina el usuario por su id
-	 * @param id
+	 * Metodo elimina el curso por su id
+	 * @param id_curso
 	 * @return
 	 */
-	public boolean eliminarUsuario(Long id) {
+	public boolean eliminarCurso(Long id_curso) {
 		boolean borrado;
 		try {
-			usuarioRepository.deleteById(id);
+			cursoRepository.deleteById(id_curso);
 			borrado = true;
 			return borrado;
 		} catch (Exception e) {
@@ -66,5 +66,9 @@ public class UsuarioService {
 
 		}
 	}
+
+    public Optional<CursoModel> buscarCursoId(long id_curso) {
+        return null;
+    }
 
 }

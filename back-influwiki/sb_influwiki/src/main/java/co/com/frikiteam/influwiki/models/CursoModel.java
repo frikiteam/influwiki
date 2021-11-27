@@ -6,159 +6,104 @@ import java.time.LocalDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "usuario")
-public class UsuarioModel implements Serializable {
+@Document(collection = "curso")
+public class CursoModel implements Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -6900647114194175687L;
 	
 	@Id
-	private long id;
-	private LocalDate fecha_registro;
-	private String nombres;
-	private String apellidos;
-	private String genero;
-	private String sobre_nombre;
-	private String correo_electronico;
-	private String contrasena;
-	private String perfil;
-	private String descripcion_contenido;
-	private String tematica;
-	private LocalDate ultima_actualizacion;
+	private long id_curso;
+	private LocalDate fecha_registro_curso;
+	private String nombre_curso;
+	private long valor;
+	private String descripcion_contenido_curso;
+	private String tematica_curso;
+	private LocalDate ultima_actualizacion_curso;
 	
 	
-	public UsuarioModel() {
+	public CursoModel() {
 		super();
 	}
 
 
-	public long getId() {
-		return id;
+	public long getId_curso() {
+		return id_curso;
 	}
 
 
-	public void setId(long id) {
-		this.id = id;
+	public void setId_curso(long id_curso) {
+		this.id_curso = id_curso;
 	}
 
 
-	public LocalDate getFecha_registro() {
-		return fecha_registro;
+	public LocalDate getFecha_registro_curso() {
+		return fecha_registro_curso;
 	}
 
 
-	public void setFecha_registro(LocalDate fecha_registro) {
-		this.fecha_registro = fecha_registro;
+	public void setFecha_registro_curso(LocalDate fecha_registro_curso) {
+		this.fecha_registro_curso = fecha_registro_curso;
 	}
 
 
-	public String getNombres() {
-		return nombres;
+	public String getNombre_curso() {
+		return nombre_curso;
 	}
 
 
-	public void setNombres(String nombres) {
-		this.nombres = nombres;
+	public void setNombre_curso(String nombre_curso) {
+		this.nombre_curso = nombre_curso;
 	}
 
 
-	public String getApellidos() {
-		return apellidos;
+	
+	public Long getValor() {
+		return valor;
 	}
 
 
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
+	public void setValor(Long valor) {
+		this.valor = valor;
 	}
 
 
-	public String getGenero() {
-		return genero;
+	public String getDescripcion_contenido_curso() {
+		return descripcion_contenido_curso;
 	}
 
 
-	public void setGenero(String genero) {
-		this.genero = genero;
+	public void setDescripcion_contenido_curso(String descripcion_contenido_curso) {
+		this.descripcion_contenido_curso = descripcion_contenido_curso;
 	}
 
 
-	public String getSobre_nombre() {
-		return sobre_nombre;
+	public String getTematica_curso() {
+		return tematica_curso;
 	}
 
 
-	public void setSobre_nombre(String sobre_nombre) {
-		this.sobre_nombre = sobre_nombre;
+	public void setTematica_curso(String tematica_curso) {
+		this.tematica_curso = tematica_curso;
 	}
 
 
-	public String getCorreo_electronico() {
-		return correo_electronico;
+	public LocalDate getUltima_actualizacion_curso() {
+		return ultima_actualizacion_curso;
 	}
 
 
-	public void setCorreo_electronico(String correo_electronico) {
-		this.correo_electronico = correo_electronico;
-	}
-
-
-	public String getContrasena() {
-		return contrasena;
-	}
-
-
-	public void setContrasena(String contrasena) {
-		this.contrasena = contrasena;
-	}
-
-
-	public String getPerfil() {
-		return perfil;
-	}
-
-
-	public void setPerfil(String perfil) {
-		this.perfil = perfil;
-	}
-
-
-	public String getDescripcion_contenido() {
-		return descripcion_contenido;
-	}
-
-
-	public void setDescripcion_contenido(String descripcion_contenido) {
-		this.descripcion_contenido = descripcion_contenido;
-	}
-
-
-	public String getTematica() {
-		return tematica;
-	}
-
-
-	public void setTematica(String tematica) {
-		this.tematica = tematica;
-	}
-
-
-	public LocalDate getUltima_actualizacion() {
-		return ultima_actualizacion;
-	}
-
-
-	public void setUltima_actualizacion(LocalDate ultima_actualizacion) {
-		this.ultima_actualizacion = ultima_actualizacion;
+	public void setUltima_actualizacion_curso(LocalDate ultima_actualizacion_curso) {
+		this.ultima_actualizacion_curso = ultima_actualizacion_curso;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Usuario [id=" + id + ", fecha_registro=" + fecha_registro + ", nombres=" + nombres + ", apellidos="
-				+ apellidos + ", genero=" + genero + ", sobre_nombre=" + sobre_nombre + ", corre_eletronico="
-				+ correo_electronico + ", contrasena=" + contrasena + ", perfil=" + perfil + ", descripcion_contenido="
-				+ descripcion_contenido + ", tematica=" + tematica + ", ultima_actualizacion=" + ultima_actualizacion
+		return "Usuario [id_curso=" + id_curso + ", fecha_registro_curso=" + fecha_registro_curso + ", nombre_curso=" 
+				+ nombre_curso +", valor=" + valor + ", descripcion_contenido_curso=" + descripcion_contenido_curso + ", tematica_curso="
+				+ tematica_curso + ", ultima_actualizacion_curso=" + ultima_actualizacion_curso
 				+ "]";
 	}
 	

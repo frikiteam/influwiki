@@ -14,59 +14,59 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.com.frikiteam.influwiki.models.UsuarioModel;
-import co.com.frikiteam.influwiki.services.UsuarioService;
+import co.com.frikiteam.influwiki.models.CursoModel;
+import co.com.frikiteam.influwiki.services.CursoService;
 
 @RestController
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET,RequestMethod.POST})
 @RequestMapping("/frikiteam/api/influwiki/v01")
-public class UsuarioController {
+public class CursoController {
 
 	@Autowired
-	UsuarioService usuarioService;
+	CursoService cursoService;
 	
 	/**
-	 * Metodo que devuelve una lista de usuarios
+	 * Metodo que devuelve una lista de curso
 	 * @return
 	 */
-	@GetMapping("/obtener-usuarios")
-	public ArrayList<UsuarioModel> obtenerUsuarios(){
-		return usuarioService.listarUsuarios();
+	@GetMapping("/obtener-curso")
+	public ArrayList<CursoModel> obtenerCurso(){
+		return cursoService.listarCurso();
 	}
 	
 	/**
-	 * Metodo que utiliza el servicio para almacenar el usuario enviado
-	 * @param usuario
+	 * Metodo que utiliza el servicio para almacenar el curso enviado
+	 * @param curso
 	 * @return
 	 */
-	@PostMapping("/crear-usuario")
-	public UsuarioModel guardarUsuario(@RequestBody UsuarioModel usuario) {
-		return usuarioService.registrarUsuario(usuario);
+	@PostMapping("/crear-curso")
+	public CursoModel guardarCurso(@RequestBody CursoModel curso) {
+		return cursoService.registrarCurso(curso);
 	}
 	
 	/**
 	 * Metodo que utiliza el servicio para eliminar segun el ID enviado
-	 * @param id
+	 * @param id_curso
 	 * @return
 	 */
-	@DeleteMapping(path = "/eliminar-usuario/{id}")
-	public String elimininarUsuario(@PathVariable("id") long id) {
-		boolean borrado = this.usuarioService.eliminarUsuario(id);
+	@DeleteMapping(path = "/eliminar-curso/{id_curso}")
+	public String elimininarCurso(@PathVariable("id_curso") long id_curso) {
+		boolean borrado = this.cursoService.eliminarCurso(id_curso);
 		if (borrado) {
-			return "Se eliminó el usario con éxito " + id;
+			return "Se eliminó el curso con éxito " + id_curso;
 		}else {
-			return "No se ha podido eleminiar el usuario " + id;
+			return "No se ha podido eleminiar el curso " + id_curso;
 		}		
 	}
 	
 	/**
 	 * Metodo que utiliza el servicio para buscar segun el ID enviado
-	 * @param id
+	 * @param id_curso
 	 * @return
 	 */
-	@GetMapping(path = "/obtener-usuarios/{id}")
-	public Optional<UsuarioModel> obtenerUsario(@PathVariable("id") long id){
-		return this.usuarioService.buscarUsuarioId(id);
+	@GetMapping(path = "/obtener-curso/{id_curso}")
+	public Optional<CursoModel> obtenerCurso(@PathVariable("id_curso") long id_curso){
+		return this.cursoService.buscarCursoId(id_curso);
 	}
 	
 	
