@@ -18,8 +18,6 @@ const Profile = ({data}) => {
     }
   }, [])
 
-  console.log(user)
-
   return (
     <div className={'contenedor'}>
       <HeaderProfile/>
