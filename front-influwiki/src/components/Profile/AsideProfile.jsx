@@ -10,15 +10,15 @@ const AsideProfile = ({ user }) => {
         <div className="up">
           <a href={'https://facebook.com'} target={'_blank'} rel={'noreferrer'}>
             <FontAwesomeIcon icon={faFacebook}/>
-            @{user.username}
+            @{user.sobre_nombre}
           </a>
-          <a href={'https://instagram.com/' + user.username} target={'_blank'} rel={'noreferrer'}>
+          <a href={'https://instagram.com/' + user.sobre_nombre} target={'_blank'} rel={'noreferrer'}>
             <FontAwesomeIcon icon={faInstagram}/>
-            @{user.username}
+            @{user.sobre_nombre}
           </a>
-          <a href={'https://twitter.com/' + user.username} target={'_blank'} rel={'noreferrer'}>
+          <a href={'https://twitter.com/' + user.sobre_nombre} target={'_blank'} rel={'noreferrer'}>
             <FontAwesomeIcon icon={faTwitter}/>
-            @{user.username}
+            @{user.sobre_nombre}
           </a>
         </div>
         <div className="down">

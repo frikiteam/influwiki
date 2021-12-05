@@ -7,11 +7,11 @@ const UserList = ({user}) => {
         <div className="caja_a">
           <div className="header_card">
             <img src="/img/foto_perfil.jpg " alt="foto perfil"/>
-            <h1>{user.name}</h1>
+            <h1>{user.nombres} {user.apellidos}</h1>
           </div>
           <div className="body_card">
-            <p>{user.username}</p>
-            <p>{user.email}</p>
+            <p>{user.sobre_nombre}</p>
+            <p>{user.descripcion_contenido}</p>
           </div>
         </div>
         <Link className={'diseño_boton'} to={'/profile/' + user.id} >

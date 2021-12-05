@@ -3,12 +3,12 @@ import './Explorer.css'
 import UserList from "../components/Explorer/UserList";
 import HeaderNav from "../components/Header/HeaderNav";
 
-const Explorer = ({data}) => {
+const Explorer = ({users}) => {
   return (
     <>
       <HeaderNav/>
       <main className={'main_explorer'}>
-        {data.map(user => <UserList user={user} key={user.id}/>)}
+        {users.map(user => <UserList user={user} key={user.id}/>)}
       </main>
     </>
   )

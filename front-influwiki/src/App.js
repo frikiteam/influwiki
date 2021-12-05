@@ -5,15 +5,15 @@ import Home from "./pages/Home";
 import Explorer from "./pages/Explorer";
 import Profile from "./pages/Profile";
 import {useEffect, useState} from "react";
+import {getUsers} from "./services/UsuarioService";
 
 const App = () => {
 
-  let [data, setData] = useState([])
+  let [users, setUsers] = useState([])
+
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users/')
-      .then(response => response.json())
-      .then(json => setData(json))
+    getUsers(setUsers)
   }, [])
 
   return (
@@ -21,8 +21,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route path={'/'} element={<Home/>}/>
-          <Route path={'/explorer'} element={<Explorer data={data}/>}/>
-          <Route path={'/profile/:id'} element={<Profile data={data}/>}/>
+          <Route path={'/explorer'} element={<Explorer users={users}/>}/>
+          <Route path={'/profile/:id'} element={<Profile/>}/>
         </Routes>
       </Router>
     </>

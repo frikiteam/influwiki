@@ -4,19 +4,16 @@ import HeaderProfile from "../components/Profile/HeaderProfile";
 import MainProfile from "../components/Profile/MainProfile";
 import AsideProfile from "../components/Profile/AsideProfile";
 import {useParams} from "react-router-dom";
+import {getUser} from "../services/UsuarioService";
 
-const Profile = ({data}) => {
+const Profile = () => {
   let { id } = useParams()
 
   let [user, setUser] = useState({})
 
   useEffect(() => {
-    for (const datum of data){
-      if (datum.id == id){
-        setUser(datum)
-      }
-    }
-  }, [])
+    getUser(id, setUser)
+  }, [id])
 
   return (
     <div className={'contenedor'}>
