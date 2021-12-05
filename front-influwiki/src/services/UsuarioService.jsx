@@ -1,29 +1,27 @@
 import axios from "axios";
 
-
+const BASE_URL = 'http://localhost:8080/frikiteam/api/influwiki/v01'
+const POST_USER_URL = '/crear-usuario'
+const GET_USERS_URL = '/obtener-usuarios/'
 /**
  * Se encarga de hacer la petción get al ervidor
  * para traer los usuario influwiki
  * @returns 
  */
-/** 
- export async function GetUsuarios() {
-     try {
-         const reponse = await axios({
-             url: `${baseUrl}/obtener-usuarios`,
-             method: "GET",
-            });
-            
-            return reponse;
-        } catch (error) {
-            console.log("errorback obtener datos" + ":" + error);
-        }
-    }
-    
-    export default GetUsuarios;
-    */
-   
-   export default axios.create({
-       
-        baseUrl : `http:localhost:8080/frikiteam/api/influwiki/v01`
-});
+
+const getUsers = async (setUsers) => {
+  let response = await axios(BASE_URL+GET_USERS_URL)
+
+  setUsers(response.data)
+}
+
+const getUser = async (id, setUser) => {
+  let response = await axios(BASE_URL+GET_USERS_URL+id)
+
+  setUser(response.data)
+}
+
+export {
+  getUsers,
+  getUser
+}
