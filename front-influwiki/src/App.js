@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Explorer from "./pages/Explorer";
 import Profile from "./pages/Profile";
 import {useEffect, useState} from "react";
+import Register from "./pages/Register";
+import Login from './pages/Login';
 
 const App = () => {
 
@@ -23,6 +25,8 @@ const App = () => {
           <Route path={'/'} element={<Home/>}/>
           <Route path={'/explorer'} element={<Explorer data={data}/>}/>
           <Route path={'/profile/:id'} element={<Profile data={data}/>}/>
+          <Route path={'/register'} element ={<Register />}/>
+          <Route path={'/login'} element ={<Login />}/>
         </Routes>
       </Router>
     </>
