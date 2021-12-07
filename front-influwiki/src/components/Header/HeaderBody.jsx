@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeaderBody = () => {
   return (
@@ -12,9 +13,9 @@ const HeaderBody = () => {
               ocasiones totalmente gratis, ya sea por redes sociales o
               plataformas virtuales.
             </p>
-            <a href="pages/user_form.html" className="btn green">
+            <Link to="register" className="btn green">
               Registrarme
-            </a>
+            </Link>
           </div>
           <img
             className="draw"

@@ -18,12 +18,10 @@ const HeaderNav = () => {
               <a href="#about">Sobre Nosotros</a>
             </li>
             <li>
-              <Link to={'/Explorer'}>Explorar</Link>
+              <Link to={'/explorer'}>Explorar</Link>
             </li>
             <li>
-              <a href="pages/login_form.html" className="btn-negative">
-                Iniciar Sesión
-              </a>
+              <Link to={'/login'}>Iniciar Sesión</Link>
             </li>
           </ul>
         </div>
