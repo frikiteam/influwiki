@@ -8,20 +8,15 @@ const GET_USERS_URL = '/obtener-usuarios/'
  * para traer los usuario influwiki
  * @returns 
  */
+export default {
+  'getUsers': async (setUsers) => {
+    let response = await axios(BASE_URL+GET_USERS_URL)
 
-const getUsers = async (setUsers) => {
-  let response = await axios(BASE_URL+GET_USERS_URL)
+    setUsers(response.data)
+  },
+  'getUser': async (id, setUser) => {
+    let response = await axios(BASE_URL+GET_USERS_URL+id)
 
-  setUsers(response.data)
-}
-
-const getUser = async (id, setUser) => {
-  let response = await axios(BASE_URL+GET_USERS_URL+id)
-
-  setUser(response.data)
-}
-
-export {
-  getUsers,
-  getUser
+    setUser(response.data)
+  }
 }

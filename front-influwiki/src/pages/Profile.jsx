@@ -4,7 +4,7 @@ import HeaderProfile from "../components/Profile/HeaderProfile";
 import MainProfile from "../components/Profile/MainProfile";
 import AsideProfile from "../components/Profile/AsideProfile";
 import {useParams} from "react-router-dom";
-import {getUser} from "../services/UsuarioService";
+import UsuarioService from "../services/UsuarioService";
 
 const Profile = () => {
   let { id } = useParams()
@@ -12,7 +12,7 @@ const Profile = () => {
   let [user, setUser] = useState({})
 
   useEffect(() => {
-    getUser(id, setUser)
+    UsuarioService.getUser(id, setUser)
   }, [id])
 
   return (

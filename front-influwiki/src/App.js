@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import Explorer from "./pages/Explorer";
 import Profile from "./pages/Profile";
 import {useEffect, useState} from "react";
-import {getUsers} from "./services/UsuarioService";
+import UsuarioService from "./services/UsuarioService";
+
 
 const App = () => {
 
@@ -13,7 +14,7 @@ const App = () => {
 
 
   useEffect(() => {
-    getUsers(setUsers)
+    UsuarioService.getUsers(setUsers)
   }, [])
 
   return (
