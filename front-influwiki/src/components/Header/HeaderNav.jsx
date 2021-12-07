@@ -21,7 +21,7 @@ const HeaderNav = () => {
               <Link to={'/explorer'}>Explorar</Link>
             </li>
             <li>
-              <Link to={'/login'}>Iniciar Sesión</Link>
+              <Link className={'btn-negative'} to={'/login'}>Iniciar Sesión</Link>
             </li>
           </ul>
         </div>
