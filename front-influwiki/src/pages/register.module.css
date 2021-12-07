@@ -1,0 +1,89 @@
+/* display: flex es para que no salte de renglon*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.h1register{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 0 0 15px 0;
+
+}
+.mainregister{
+  font-family: 'Roboto', sans-serif;
+  background: #AFF2FF fixed;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: auto;
+  text-align: left;
+  width: 50%;
+  padding: 20px;
+
+  background: rgba(227, 199, 247, 0.37);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.diseño_label{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+  width: 50%;
+}
+.diseño_input{
+  padding: 1rem 2rem;
+  width: 300px;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.diseño_input_area{
+  padding: 1rem 2rem;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.boton_formulario{
+  padding: 1rem 2rem;
+  width: fit-content;
+  margin: auto;
+
+  color:rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  background-color: #81C91D;
+}
+
+.boton_formulario:hover{
+  background-color:  #5d8622;
+  cursor:pointer;
+}
+
+.buttonsForm {
+  display: flex;
+}
+
+.termsConditions {
+  text-decoration: #39AF64 3px underline;
+}
+
+.labelsGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.labelsGroup input {
+  margin-right: 2rem;
+}

@@ -1,88 +1,148 @@
-import React from "react";
+import React, {useState} from "react";
 import HeaderNav from "../components/Header/HeaderNav";
-
-import './Register.css'
-
+import styled from "./register.module.css";
+import {Link} from "react-router-dom";
 
 const Register = () => {
+  let [showSocial, setShowSocial] = useState(false)
+  let [showOther, setShowOther] = useState(false)
+
+  const onClickOther = event => {
+    setShowOther(lastState => !lastState)
+  }
+
   return (
     <>
-    <HeaderNav/>
-      <main className="mainregister">
-        <div className="divFormulario">
-        <center>
-            
+      <HeaderNav/>
+      <main className={styled.mainregister}>
+        <form className={styled.formulario}>
+          <h1 className={styled.h1register}>Formulario de Registro</h1>
 
-            <form className="formulario">
-                <h1 className="h1register">Formulario de Registro</h1>
-                
-                <label className="diseño_label1" for="nombre"> Nombres: </label>                
-                <input className="diseño_input1" type="text" id="nombre" name="txtNombre" maxlength= "30" size = "30" placeholder="Ingresa aqui tu nombre"/>
-                
-                <br /><br />
+          <label className={styled.diseño_label}>
+            Nombres:
+            <input
+              className={styled.diseño_input}
+              type="text"
+              name="txtNombre"
+              placeholder="Ingresa aqui tu nombre"
+            />
+          </label>
 
-                <label className="diseño_label1" for="apellido"> Apellidos: </label>                
-                <input className="diseño_input1" type="text" id="Apellido" name="txtApellido" maxlength= "30" size = "30" placeholder="Ingresa aqui tu apellido"/>
-                
-                <br /><br />
+          <label className={styled.diseño_label}>
+            Apellidos:
+            <input
+              className={styled.diseño_input}
+              type="text"
+              name="txtApellido"
+              placeholder="Ingresa aqui tu apellido"
+            />
+          </label>
 
-                <label className="diseño_label1" for="correo"> Correo: </label>
-                <input className="diseño_input1" type="email" id="correo" name="txtCorreo" size="40" placeholder="Ingresa aqui tu correo"/>
-                
-                <br /><br />
-                
-                <label className="diseño_label1">Genero:</label>
-                <label>Masculino:</label><input type="radio" name="genero" value="Masculino"/>
-                <label>Femenino:</label><input type="radio" name="genero" value="Femenino"/>
-                
-                <br /><br />
+          <label className={styled.diseño_label}>
+            Correo:
+            <input
+              className={styled.diseño_input}
+              type="email"
+              name="txtCorreo"
+              placeholder="Ingresa aqui tu correo"
+            />
+          </label>
 
-                <label className="diseño_label1">Perfil:</label>
-                <label>Influwiki:</label><input type="radio" name="perfil" value="Influwiki" checked/>
-                
-                <br /><br />
-                
-                <label className="diseño_label1">Contenido a compartir:</label>
-                <label>Programacion:</label>                
-                <input type="checkbox" name="materias" checked/>
-                <label>Farandula:</label>
-                <input type="checkbox" name="materias"/>
-                <label>Otra:</label>
-                <input type="checkbox" name="materias"/>
-                
-                <br /><br />
+          <div className={styled.labelsGroup}>
+            Genero:
+            <label>
+              Masculino:
+              <input
+                type="radio"
+                name="genero"
+                value="Masculino"
+              />
+            </label>
+            <label>
+              Femenino:
+              <input
+                type="radio"
+                name="genero"
+                value="Femenino"
+              />
+            </label>
+          </div>
 
-                <label className="diseño_label1"> Otra: </label>                
-                <input className="diseño_input1" type="text" name="txtOtro" min="1" max="120" size="10" placeholder="Cual Otra"/>
-                
-                <br /><br />
+          <div className={styled.labelsGroup}>
+            Perfil:
+            <label>
+              Influwiki:
+              <input
+                type="radio"
+                name="perfil"
+                value="Influwiki"
+                checked
+              />
+            </label>
+          </div>
 
-                <label className="diseño_label1"> Descripcion General:</label>
-                <textarea className="diseño_input_area" type="text" rows="3" cols="20">                    
-                </textarea>
-                
-                <br /><br />
+          <div className={styled.labelsGroup}>
+            Contenido a compartir:
+            <label>
+              Programación:
+              <input
+                type="radio"
+                name="materias"
+                value="Programación"
+                checked
+              />
+            </label>
+            <label>
+              Farandula:
+              <input
+                type="radio"
+                value="Farandula"
+                name="materias"
+              />
+            </label>
+            <label>
+              Otra:
+              <input
+                type="radio"
+                name="materias"
+                value="Otra"
+                onClick={onClickOther}
+              />
+              {showOther
+                &&
+                <input
+                  className={styled.diseño_input}
+                  type="text"
+                  name="materias"
+                  placeholder="Ingrese otra categoría"
+                />
+              }
+            </label>
+          </div>
 
-                <center>
-                <button className="boton_formulario1" type="submit" > <a href="editar_redes sociales.html">Agregar redes sociales</a></button>
-                </center>
-                
-                <br /><br />
+          <label className={styled.diseño_label}>
+            Descripcion General:
+            <textarea
+              className={styled.diseño_input_area}
+              type="text"
+            />
+          </label>
 
-                <label className="diseño_label1"> <a href="terms_form.html" target="_blank">Acepta terminos y condiciones</a> </label>
-                <input type="checkbox" name="Terminos"/>               
-                
-                <br /><br />
+          <label className={styled.diseño_label}>
+            <Link
+              className={styled.termsConditions}
+              to={'/terms'} target="_blank"
+            >
+              Acepta terminos y condiciones
+            </Link>
+            <input type="checkbox" name="Terminos"/>
+          </label>
 
-                <center>                
-                <div className="botones_formulario">
-                <button className="boton_formulario1" type="submit" > Guardar </button>
-                <button className="boton_formulario1" type="submit" > <a href="/front-influwiki/src/pages/Login.jsx">Iniciar sesión</a></button>
-                </div>
-                </center>
-            </form>
-        </center>
-        </div>    
+          <div className={styled.buttonsForm}>
+            <button className={styled.boton_formulario}> Guardar </button>
+            <Link to={'/login'} className={styled.boton_formulario} >Iniciar Sesión</Link>
+          </div>
+        </form>
       </main>
     </>
   )
