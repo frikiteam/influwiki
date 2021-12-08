@@ -4,8 +4,8 @@ const BASE_URL = 'http://localhost:8080/frikiteam/api/influwiki/v01'
 const POST_USER_URL = '/crear-usuario'
 const GET_USERS_URL = '/obtener-usuarios/'
 /**
- * Se encarga de hacer la petción get al ervidor
- * para traer los usuario influwiki
+ * Se encarga de hacer la petción get al servidor
+ * para traer los usuario Influwiki
  * @returns 
  */
 export default {

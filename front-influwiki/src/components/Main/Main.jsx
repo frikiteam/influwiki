@@ -11,9 +11,9 @@ const Main = () => {
                 <div className="text-ctn flex">
                     <h2>Somos el puente para encontrar lo que necesitas</h2>
                     <p>
-                        Hola, en esta página podrás encontrar creadores de contenido relacionados con la educación (por ahora en programación)
-                        que te ayudarán en tu camino del aprendizaje, podrás buscar por su nombre o filtrar por lenguajes así al presionar
-                        en un influencer se mostrará el perfil con un breve resumen y los links correspondientes. ¡Anímate a aprender!
+                        ¡Hola! En esta página podrás encontrar creadores de contenido relacionados con la educación (por ahora en programación)
+                        que te ayudarán en tu camino de aprendizaje. Podrás buscar por su nombre o filtrar por lenguajes de programación. De esta manera
+                        al presionar en un influencer, se mostrará el perfil con un breve resumen y los links correspondientes. ¡Anímate a aprender!
                     </p>
                 </div>
             </div>

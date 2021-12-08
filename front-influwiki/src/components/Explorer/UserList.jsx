@@ -15,7 +15,7 @@ const UserList = ({user}) => {
           </div>
         </div>
         <Link className={'diseño_boton'} to={'/profile/' + user.id} >
-          ver perfil
+          Ver perfil
         </Link>
       </div>
   );
