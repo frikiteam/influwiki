@@ -5,7 +5,7 @@ const HeaderProfile = () => {
   return (
     <>
       <header className="header_profile">
-        <Link className= "boton" to="/explorer">Atras</Link>
+        <Link className= "boton" to="/explorer">Atrás</Link>
         <Link to="/" title="ir a la pagina principal ">
           <img
               className="logo"

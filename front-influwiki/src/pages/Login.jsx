@@ -27,8 +27,8 @@ const Login = () => {
         <button>Iniciar Sesión</button>
       </form>
       <div>
-        <Link className="small" to="/password_recovery">Olvidé mi Contraseña?</Link>
-        <Link className="small" to="/register">Crear Cuenta!</Link>
+        <Link className="small" to="/password_recovery">¿Olvidé mi Contraseña?</Link>
+        <Link className="small" to="/register">¡Crear Cuenta!</Link>
       </div>
     </>
   )
