@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,37 +14,19 @@ const Footer = () => {
           <nav className="nav-footer flex space-between full-height y-center column">
             <ul>
               <li>
-                <a href="">Explorar</a>
+                <Link to="/explorer">Explorar</Link>
               </li>
               <li>
-                <a href="">Iniciar sesión</a>
+                <Link to="/login">Iniciar sesión</Link>
               </li>
               <li>
-                <a href="">Registrarme</a>
-              </li>
-              <li>
-                <a href="">Recuperar contraseña</a>
+                <Link to="/register">Registrarme</Link>
               </li>
             </ul>
             <ul>
               <h3>Contacta con los creadores</h3>
               <li>
-                <a href="">Brufeli</a>
-              </li>
-              <li>
-                <a href="">Yesid</a>
-              </li>
-              <li>
-                <a href="">Leonardo</a>
-              </li>
-              <li>
-                <a href="">María</a>
-              </li>
-              <li>
-                <a href="">Juan</a>
-              </li>
-              <li>
-                <a href="">Carlos</a>
+                <Link to='/contact'>Friki Team</Link>
               </li>
             </ul>
           </nav>
