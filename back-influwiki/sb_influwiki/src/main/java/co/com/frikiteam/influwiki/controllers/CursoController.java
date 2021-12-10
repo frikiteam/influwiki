@@ -19,7 +19,7 @@ import co.com.frikiteam.influwiki.services.CursoService;
 
 @RestController
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET,RequestMethod.POST})
-@RequestMapping("/frikiteam/api/influwiki/v01")
+@RequestMapping("/curso")
 public class CursoController {
 
 	@Autowired

@@ -59,8 +59,15 @@ public class UsuarioService {
 		} catch (Exception e) {
 			borrado = false;
 			return borrado;
-
 		}
 	}
-
+	
+	/**
+	 * 
+	 * @param correo
+	 * @return
+	 */
+	public UsuarioModel loginUsuario(String correo) {
+		return usuarioRepository.buscarCorreo(correo);
+	}
 }

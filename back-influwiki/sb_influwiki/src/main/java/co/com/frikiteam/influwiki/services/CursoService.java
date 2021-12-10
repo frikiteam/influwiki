@@ -44,9 +44,9 @@ public class CursoService {
 	 * @param id_curso
 	 * @return
 	 */
-	public Optional<CursoModel>  buscarCursoId(Long id_curso) {
+	public Optional<CursoModel>  buscarCursoId(Long id) {
 		
-		return cursoRepository.findById(id_curso);
+		return cursoRepository.findById(id);
 	}
 	
 	/**
@@ -63,12 +63,6 @@ public class CursoService {
 		} catch (Exception e) {
 			borrado = false;
 			return borrado;
-
 		}
 	}
-
-    public Optional<CursoModel> buscarCursoId(long id_curso) {
-        return null;
-    }
-
 }

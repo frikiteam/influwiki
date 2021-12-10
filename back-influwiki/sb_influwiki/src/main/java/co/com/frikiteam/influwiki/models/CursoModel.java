@@ -14,7 +14,7 @@ public class CursoModel implements Serializable {
 	private static final long serialVersionUID = -6900647114194175687L;
 	
 	@Id
-	private long id_curso;
+	private long id;
 	private LocalDate fecha_registro_curso;
 	private String nombre_curso;
 	private long valor;
@@ -29,12 +29,12 @@ public class CursoModel implements Serializable {
 
 
 	public long getId_curso() {
-		return id_curso;
+		return id;
 	}
 
 
 	public void setId_curso(long id_curso) {
-		this.id_curso = id_curso;
+		this.id = id_curso;
 	}
 
 
@@ -101,7 +101,7 @@ public class CursoModel implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Usuario [id_curso=" + id_curso + ", fecha_registro_curso=" + fecha_registro_curso + ", nombre_curso=" 
+		return "Usuario [id_curso=" + id + ", fecha_registro_curso=" + fecha_registro_curso + ", nombre_curso=" 
 				+ nombre_curso +", valor=" + valor + ", descripcion_contenido_curso=" + descripcion_contenido_curso + ", tematica_curso="
 				+ tematica_curso + ", ultima_actualizacion_curso=" + ultima_actualizacion_curso
 				+ "]";
